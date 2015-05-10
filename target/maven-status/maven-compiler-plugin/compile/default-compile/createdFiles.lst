@@ -1,5 +1,6 @@
 net\zx\bo\UserManager.class
 net\zx\web\LoginController.class
+net\zx\exception\BusinessException.class
 net\zx\pojo\Member.class
 net\zx\web\AppMain.class
 net\zx\web\HelloController.class
