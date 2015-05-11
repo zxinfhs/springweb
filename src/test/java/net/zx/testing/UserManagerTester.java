@@ -1,6 +1,7 @@
 package net.zx.testing;
 
 
+import net.zx.bo.FakeUserManager;
 import net.zx.bo.UserManager;
 import net.zx.exception.BusinessException;
 import net.zx.pojo.FakeUser;
@@ -18,7 +19,7 @@ import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
 public class UserManagerTester {
-	public static UserManager manager;
+	public static FakeUserManager manager;
 	
 	@Rule
 	public TestRule myrule = new TestRule() {
@@ -43,7 +44,7 @@ public class UserManagerTester {
 	@BeforeClass
 	public static void setupClass() {
 		System.out.println("before class");
-		manager = new UserManager();
+		manager = new FakeUserManager();
 	}
 	@AfterClass
 	public static void tearDownClass() {
