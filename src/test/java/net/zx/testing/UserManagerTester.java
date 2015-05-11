@@ -3,7 +3,7 @@ package net.zx.testing;
 
 import net.zx.bo.UserManager;
 import net.zx.exception.BusinessException;
-import net.zx.pojo.User;
+import net.zx.pojo.FakeUser;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -61,14 +61,14 @@ public class UserManagerTester {
 	@Test
 	public void addUserTester() {
 		System.out.println("addUser testing");
-		User user = manager.addUser();
+		FakeUser user = manager.addUser();
 		Assert.assertEquals("admin10", user.getUserName());
 	}
 	
 	@Test
 	public void getUserTester() {
 		System.out.println("getUser testing");
-		User user = manager.getUser(8);
+		FakeUser user = manager.getUser(8);
 		Assert.assertEquals("getUser testing", "admin8", user.getUserName());
 		Assert.assertEquals(8, user.getId());
 	}

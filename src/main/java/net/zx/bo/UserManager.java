@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import net.zx.exception.BusinessException;
+import net.zx.pojo.FakeUser;
 import net.zx.pojo.User;
 
 public class UserManager {
@@ -12,7 +13,7 @@ public class UserManager {
 		return true;
 	}
 	
-	public User addUser() {
+	public FakeUser addUser() {
 		return makeFakeUser(10);
 	}
 	
@@ -24,16 +25,16 @@ public class UserManager {
 		return null;
 	}
 	
-	public User deleteUser(int id) {
+	public FakeUser deleteUser(int id) {
 		return makeFakeUser(id);
 	}
 	
-	public User getUser(int id) {
+	public FakeUser getUser(int id) {
 		return makeFakeUser(id);
 	}
 	
-	public List<User> listUser() {
-		List<User> users = new ArrayList<User>();
+	public List<FakeUser> listUser() {
+		List<FakeUser> users = new ArrayList<FakeUser>();
 		users.add(makeFakeUser(1));
 		users.add(makeFakeUser(2));
 		users.add(makeFakeUser(3));
@@ -41,8 +42,8 @@ public class UserManager {
 		
 	} 
 	
-	private User makeFakeUser(int id) {
-		User fakeUser = new User();
+	private FakeUser makeFakeUser(int id) {
+		FakeUser fakeUser = new FakeUser();
 		fakeUser.setId(id);
 		fakeUser.setUserName("admin" + id);
 		fakeUser.setPassword("adminpass");
