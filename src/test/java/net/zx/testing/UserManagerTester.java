@@ -78,7 +78,6 @@ public class UserManagerTester {
 		manager.deleteUser();	
 	}
 
-	
 	@Ignore("ignore this test case")
 	@Test
 	public void ingoredTester() {

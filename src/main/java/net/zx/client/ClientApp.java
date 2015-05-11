@@ -12,14 +12,34 @@ public class ClientApp {
 		System.out.println("spring mvc testing client");
 		try {
 			ClientApp app = new ClientApp();
-			app.hibernatedInitTest();
+			app.hibernat4InitTest();
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
 		
 	}
+	private void hibernat4InitTest() {
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring4.xml");
+        
+        UserDAO personDAO = context.getBean(UserDAO.class);
+         
+        User person = new User();
+        person.setName("Pankaj"); 
+         
+        personDAO.save(person);
+         
+        System.out.println("Person::"+person);
+         
+        List<User> list = personDAO.list();
+         
+        for(User p : list){
+            System.out.println("Person List::"+p);
+        }
+        //close resources
+        context.close();  
+	}
 	
-	private void hibernatedInitTest() {
+	private void hibernat3InitTest() {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
         
         UserDAO personDAO = context.getBean(UserDAO.class);
