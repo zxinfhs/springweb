@@ -24,13 +24,13 @@
   </form>
 
   <div class="login-help">
-    <a href="#">Register</a> • <a href="#">Forgot Password</a>
+    <a href="#">Register</a>  <a href="#">Forgot Password</a>
   </div>
 </div>
 
 <!-- <div id="error"><img src="https://dl.dropboxusercontent.com/u/23299152/Delete-icon.png" /> Your caps-lock is on.</div> -->
 
-  <script src='http://codepen.io/assets/libs/fullpage/jquery_and_jqueryui.js'></script>
+  
 
 </body>
 

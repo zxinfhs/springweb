@@ -1,7 +1,10 @@
-net\zx\pojo\Member.class
+net\zx\bo\UserDAO.class
 net\zx\bo\UserManager.class
+net\zx\bo\FakeUserManager.class
 net\zx\web\LoginController.class
+net\zx\pojo\Member.class
 net\zx\exception\BusinessException.class
-net\zx\web\HelloController.class
+net\zx\pojo\FakeUser.class
+net\zx\client\ClientApp.class
 net\zx\web\PingController.class
 net\zx\pojo\User.class
