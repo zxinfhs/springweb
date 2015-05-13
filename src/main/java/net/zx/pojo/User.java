@@ -1,6 +1,7 @@
 package net.zx.pojo;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,7 +18,7 @@ public class User {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	private String name;
-	private Date updated;
+	private Timestamp updated;
 	
 	
 	public int getId() {
@@ -32,10 +33,10 @@ public class User {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Date getUpdated() {
+	public Timestamp getUpdated() {
 		return updated;
 	}
-	public void setUpdated(Date updated) {
+	public void setUpdated(Timestamp updated) {
 		this.updated = updated;
 	}
 	@Override
