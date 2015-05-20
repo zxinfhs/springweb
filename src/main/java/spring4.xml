@@ -21,6 +21,9 @@
         <property name="annotatedClasses">
             <list>
                 <value>net.zx.pojo.User</value>
+                <value>net.zx.pojo.UserAddress</value>
+                <value>net.zx.pojo.UserEmail</value>
+                <value>net.zx.pojo.Role</value>
             </list>
         </property>
         <property name="hibernateProperties">
